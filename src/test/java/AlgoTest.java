@@ -24,7 +24,7 @@ public class AlgoTest {
 		assertTrue(dataTest.myArray[6].key == answer.myArray[6].key);
 		SortAlgos.bubbleSort(null);
 	}
-	//test case for checking heap
+	//test case for checking heap, except nullpointer exception
 	@Test
 	public void testheap() {
 		SortDemoData dataTest = new SortDemoData();
@@ -40,7 +40,7 @@ public class AlgoTest {
 		assertTrue(dataTest.myArray[5].key == answer.myArray[5].key);
 		assertTrue(dataTest.myArray[6].key == answer.myArray[6].key);
 	}
-	//test case for checking insertion
+	//test case for checking insertion,except nullpointer exception
 	@Test
 	public void testinsertion() {
 		SortDemoData dataTest = new SortDemoData();
@@ -56,7 +56,7 @@ public class AlgoTest {
 		assertTrue(dataTest.myArray[5].key == answer.myArray[5].key);
 		assertTrue(dataTest.myArray[6].key == answer.myArray[6].key);
 	}
-	//test case for checking merge
+	//test case for checking merge,except nullpointer exception
 	@Test
 	public void testmerge() {
 		SortDemoData dataTest = new SortDemoData();
@@ -72,7 +72,7 @@ public class AlgoTest {
 		assertTrue(dataTest.myArray[5].key == answer.myArray[5].key);
 		assertTrue(dataTest.myArray[6].key == answer.myArray[6].key);
 	}
-	//test case for checking quick
+	//test case for checking quick,except nullpointer exception
 	@Test
 	public void testquick() {
 		SortDemoData dataTest = new SortDemoData();
@@ -88,6 +88,7 @@ public class AlgoTest {
 		assertTrue(dataTest.myArray[5].key == answer.myArray[5].key);
 		assertTrue(dataTest.myArray[6].key == answer.myArray[6].key);
 	}
+	//testing for selection sort, except for null pointer exception
 	@Test
 	public void testselection() {
 		SortDemoData dataTest = new SortDemoData();
